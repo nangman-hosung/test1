@@ -1,5 +1,10 @@
   @charset "uts-8";
-  
+  /* 스킵 내비게이션 */
+  #skip {position: relative;}
+  #skip a {position:absolute; left: 0;border: 1px solid #fff; color: #fff; background: #333; line-height: -30; width: 140px; text-align: center;}
+  #skip a:active,
+  #skip a:focus {top: 150px;}
+
   /* 전체 레이아웃 */
   #wrap { color: #fff; text-align: center;}
   #header {height: 100px;}

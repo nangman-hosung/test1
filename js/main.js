@@ -7,3 +7,4 @@ bars.addEventListener('click', function(){
    menu.classList.toggle('active');
    login.classList.toggle('active');
 });
+

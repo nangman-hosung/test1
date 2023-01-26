@@ -13,12 +13,12 @@
   #footer {height: 220px;}
 
   /* 세부 레이아웃 */
-  #content_selecter {height: 160px;  background-color: #26c6da;}
+  #content_selecter {height: 160px;  background-color: white;}
   #content2 {height: 480px;  background-color: #00bcd4;}
   #content3 {height: 380px;  background-color: #00acc1;}
 
   /* 컨테이너 */
-  .container {width: 1100px; margin: 0 auto; height: inherit; background: rgba(0,0,0,0.3);}
+  .container {width: 1100px; margin: 0 auto; height: inherit; background: white;}
 
   /* Header 세부 스타일_장프로*/
   body {
@@ -163,48 +163,60 @@
 
 /*아이콘 크기 조정 -> padding 조정*/
 .main_selector .concert_icon {
-  padding: 25px;
+  padding:20px;
   padding-top: 10px;
 }
 
 .main_selector .fest_icon {
-  padding: 25px;
+  padding: 20px;
   padding-top: 10px;
 }
 
 .main_selector .pj_icon {
-  padding: 25px;
+  padding: 20px;
   padding-top: 10px;
 }
 
-.main_selector ul li p {
-  font-size: 15px;
+.main_selector ul li p{
+  font-size: 20px;
   text-align: center;
   position: relative;
   top: 25px;
+  filter: opacity(0.5) drop-shadow(0 0 0 #6B6A6F);
 }
 
 .main_selector ul li a {
   text-decoration: none;
 }
 
+/* 아이콘, 글 에 마우스 -> 검정 */
+
+.main_selector ul li:hover{
+  transition: 0.5s;
+  filter: brightness(0) invert(0);
+}
+
 /* 아이콘 이미지 삽입 */
-.main_selector .exhibit_icon {
+.exhibit_icon {
   background: url('/images/exhibition.png') no-repeat;
   background-size: 100% auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 #6B6A6F);
 }
 
-.main_selector .concert_icon {
-  background: url('/images/concert.png') no-repeat;
+.concert_icon {
+  background: url('/images/microphone.png') no-repeat;
   background-size: 100% auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 #6B6A6F);
 }
 
-.main_selector .fest_icon {
+.fest_icon {
   background: url('/images/festival.png') no-repeat;
   background-size: 100% auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 #6B6A6F);
 }
 
-.main_selector .pj_icon {
-  background: url('/images/project.png') no-repeat;
+.pj_icon {
+  background: url('/images/briefing.png') no-repeat;
   background-size: 100% auto;
+  filter: opacity(0.5) drop-shadow(0 0 0 #6B6A6F);
 }
